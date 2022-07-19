@@ -662,6 +662,123 @@ body {
   }
 
   /* ======== homepage-footer end ========= */
+  /* ======= products-page-01 strat ======= */
+  .products-page-01 {
+    position: relative;
+    display: flex;
+    width: 100%;
+  }
+  .pp-container-01 {
+    width: 100%;
+    display: flex;
+  }
+  .pp-container-01::before {
+    content: "";
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    z-index: 5;
+    clip-path: polygon(0% 0%, 100% 100%, 100% 0%);
+    /*多邊形圖案用頂點定位( x軸 Y軸, x軸 Y軸, x軸 Y軸)  設定三個頂點則為三角形*/
+    background-color: #302c27;
+  }
+  .pp-container-01::after {
+    content: "";
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
+    /*多邊形圖案用頂點定位( x軸 Y軸, x軸 Y軸, x軸 Y軸)  設定三個頂點則為三角形*/
+    background-color: #302c27;
+  }
+  .pp-left-02 {
+    cursor: pointer;
+    width: 50%;
+  }
+  .pp-left-02 > img {
+    width: 100%;
+    display: block;
+  }
+  .pp-right-02 {
+    cursor: pointer;
+    width: 50%;
+  }
+  .pp-right-02 > img {
+    width: 100%;
+    display: block;
+  }
+  .pp-left-02:hover .pp-left-01 {
+    display: flex;
+  }
+  .pp-right-02:hover .pp-right-01 {
+    display: flex;
+  }
+  .pp-left-01 {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  .pp-left-01 > div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(79, 79, 79);
+    opacity: 0.9;
+  }
+  .pp-left-01 h2 {
+    position: relative;
+    z-index: 4;
+    color: #ffdda1;
+    font-size: 48px;
+  }
+  .pp-left-01 > p {
+    position: relative;
+    z-index: 4;
+    color: #c2a26b;
+    font-size: 26px;
+  }
+  .pp-right-01 {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .pp-right-01 > div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(79, 79, 79);
+    opacity: 0.9;
+  }
+  .pp-right-01 h2 {
+    position: relative;
+    z-index: 4;
+    color: #ffdda1;
+    font-size: 48px;
+  }
+  .pp-right-01 > p {
+    position: relative;
+    z-index: 4;
+    color: #c2a26b;
+    font-size: 26px;
+  }
+
+  /* ======== products-page-01 end ======== */
 }
 @media screen and (min-width: 1024px) {
   .hp1024up {
