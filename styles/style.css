@@ -81,6 +81,9 @@ body {
     flex-grow: 1;
   }
   /* ========= Nav Bar start ======== */
+  .nav-title {
+    display: none;
+  }
   .nav-block {
     width: 100%;
     padding: 30px 0px;
@@ -101,27 +104,31 @@ body {
     align-items: center;
     border-bottom: 1px solid #878787;
     border-radius: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .nav-items-container a:hover {
     background-color: #878787;
+    transition: 0.3s;
   }
-  .nav-items-container a:hover h2,
-  .nav-items-container a:hover h3 {
+  .nav-items-container a:hover div,
+  .nav-items-container a:hover p {
     color: #ffdaa1;
+    transition: 0.3s;
   }
 
-  .nav-items-container a h2,
-  .nav-items-container a h3 {
+  .nav-items-container a div,
+  .nav-items-container a p {
     color: #878787;
     padding: 0 20px;
   }
-  .nav-items-container a h2 {
+  .nav-items-container a div {
+    margin: 20px 0;
     padding-left: 50px;
   }
-  .nav-items-container a h3 {
+  .nav-items-container a p {
     padding-right: 60px;
     font-family: "Edu NSW ACT Foundation", cursive;
+    margin: 0;
   }
   .nav-item-ct {
     font-weight: bolder;
@@ -422,9 +429,10 @@ body {
     border-bottom: 2px solid #c19759;
     bottom: 15%;
     left: 10%;
+    text-shadow: 2px 3px 2px #695639;
   }
-  /* ========== homepage-02 =========== */
-  /* ========== homepage-03 =========== */
+  /* ========== homepage-02 end ========= */
+  /* ========== homepage-03 start ======= */
   .homepage-03 {
     width: 100%;
     position: relative;
@@ -448,10 +456,12 @@ body {
   .homepage-03 h2 {
     font-size: 36px;
     margin-bottom: 10px;
+    text-shadow: 2px 3px 2px #695639;
   }
   .homepage-03 h3 {
     font-size: 24px;
     margin-bottom: 30px;
+    text-shadow: 2px 3px 2px #695639;
   }
   .menu-pic {
     box-sizing: border-box;
@@ -503,13 +513,155 @@ body {
     display: block;
   }
 
-  /* ========== homepage-03 =========== */
-  /* ========== homepage-04 =========== */
+  /* ========== homepage-03 end ========== */
+  /* ========== homepage-04 start ======== */
   .homepage-04 {
     width: 100%;
-    background-color: #302c27;
+    position: relative;
   }
-  /* ========== homepage-04 =========== */
+  .homepage-04 > img {
+    position: absolute;
+    width: 100%;
+    max-height: 1080px;
+  }
+
+  .hp-04-background-block {
+    width: 35%;
+    height: 600px;
+    background-color: #eed38f21;
+    border-radius: 0 20px 20px 0;
+    position: absolute;
+    top: 10%;
+  }
+  .hp-04-container {
+    padding-top: 10%;
+  }
+  .hp-04-row {
+    padding-top: 60px;
+  }
+  .hp-04-left {
+    box-sizing: border-box;
+    width: 45%;
+    position: relative;
+    z-index: 3;
+    padding: 0 10px;
+  }
+  .hp-04-pic-container img {
+    width: 100%;
+  }
+  .hp-04-right {
+    box-sizing: border-box;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    padding: 5% 0;
+    position: relative;
+    z-index: 4;
+  }
+  .hp-04-right h4,
+  .hp-04-right p,
+  .hp-04-right a {
+    display: block;
+    width: 80%;
+  }
+  .hp-04-right h4 {
+    text-align: center;
+    color: #e2b066;
+    font-size: 36px;
+    margin: 40px auto;
+    text-shadow: 2px 3px 2px #695639;
+  }
+  .hp-04-right p {
+    color: #ba9660;
+    margin: 0 auto 10px auto;
+    font-size: 20px;
+    line-height: 40px;
+    text-shadow: 1px 2px 1px #695639;
+    flex-grow: 1;
+  }
+  .hp-04-right a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width: 140px;
+    height: 50px;
+    background-color: #956d31;
+    color: #e8bd7c;
+    border-radius: 10px;
+    align-self: flex-end;
+    margin-bottom: 80px;
+    margin-right: 10%;
+    font-weight: 700;
+  }
+  .hp-04-right a:hover {
+    position: relative;
+    top: -2px;
+    right: -2px;
+    box-shadow: 2px 3px 2px 2px #6956398f;
+    background-color: #e8bd7c;
+    color: #956d31;
+    transition: 0.3s;
+  }
+  /* ========== homepage-04 end =========== */
+  /* ======== homepage-footer start ======= */
+  .homepage-footer {
+    width: 100%;
+    margin-top: 10%;
+  }
+  .row-footer {
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer-logo-container {
+    margin-bottom: 50px;
+    width: 20%;
+  }
+  .footer-logo-container .footer-logo {
+    cursor: pointer;
+  }
+  .footer-logo img {
+    width: 100%;
+  }
+  .footer-media {
+    display: flex;
+  }
+  .footer-media a {
+    width: 20%;
+    margin: 15px 20px 15px 0px;
+  }
+  .footer-media a img {
+    width: 100%;
+  }
+  .footer-loaction {
+    color: #93764b;
+    font-size: 12px;
+  }
+  .footer-menu-container {
+    position: relative;
+    right: -10%;
+    width: 20%;
+  }
+  .footer-menu-item {
+    display: flex;
+    justify-content: space-between;
+    color: #93744b;
+    margin: 20px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .footer-menu-item:hover {
+    color: #dcad5c;
+    text-decoration: underline;
+    text-shadow: 1px 1px 1px #695639;
+  }
+  .footer-copyright {
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #93744b;
+  }
+
+  /* ======== homepage-footer end ========= */
 }
 @media screen and (min-width: 1024px) {
   .hp1024up {
