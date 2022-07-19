@@ -424,6 +424,92 @@ body {
     left: 10%;
   }
   /* ========== homepage-02 =========== */
+  /* ========== homepage-03 =========== */
+  .homepage-03 {
+    width: 100%;
+    position: relative;
+    background-color: #302c27;
+    background-image: linear-gradient(#878787 20%, transparent 50%);
+  }
+  .hp-03-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 140px;
+  }
+  .homepage-03 h2,
+  .homepage-03 h3 {
+    align-self: flex-end;
+    padding-right: 10%;
+    color: #ffdda1;
+    margin: 0;
+    display: block;
+  }
+  .homepage-03 h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  .homepage-03 h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .menu-pic {
+    box-sizing: border-box;
+    position: relative;
+  }
+  .menu-pic h4 {
+    display: none;
+    font-size: 36px;
+    top: 35%;
+    left: 40%;
+    color: #ffdda1;
+    position: absolute;
+  }
+  .menu-pic p {
+    display: none;
+    font-size: 24px;
+    top: 50%;
+    left: 40%;
+    color: #ffdda1;
+    position: absolute;
+  }
+  .menu-pic img {
+    width: 100%;
+    display: block;
+  }
+  .menu-coffee {
+    top: -40px;
+  }
+  .menu-drink {
+    top: 60px;
+  }
+  .menu-dessert {
+    top: -10px;
+  }
+  .menu-food {
+    top: 40px;
+  }
+  .menu-pic:hover {
+    top: 0;
+    transition: top 0.3s;
+  }
+  .menu-pic:hover img {
+    opacity: 0.4;
+  }
+  .menu-pic:hover h4 {
+    display: block;
+  }
+  .menu-pic:hover p {
+    display: block;
+  }
+
+  /* ========== homepage-03 =========== */
+  /* ========== homepage-04 =========== */
+  .homepage-04 {
+    width: 100%;
+    background-color: #302c27;
+  }
+  /* ========== homepage-04 =========== */
 }
 @media screen and (min-width: 1024px) {
   .hp1024up {
