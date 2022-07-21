@@ -7,8 +7,9 @@
   display: flex;
   flex-wrap: wrap;
 }
-[class*="col-"],
-[class*="cols-"] .col {
+[class*='col-'],
+[class*='cols-'] .col {
+  box-sizing: border-box;
   padding-left: 15px;
   padding-right: 15px;
 }
