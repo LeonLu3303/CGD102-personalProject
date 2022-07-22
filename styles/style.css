@@ -608,6 +608,8 @@ body {
     cursor: pointer;
     background-color: #c19759;
     position: fixed;
+    z-index: 10;
+    top: 25%;
     width: 420px;
     height: 400px;
     display: flex;
