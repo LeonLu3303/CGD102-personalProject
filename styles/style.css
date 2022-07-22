@@ -603,6 +603,150 @@ body {
     color: #956d31;
     transition: 0.3s;
   }
+  /* ======= shopping car start ======== */
+  .mix-box-container {
+    cursor: pointer;
+    background-color: #c19759;
+    position: fixed;
+    width: 420px;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 0 20px 20px 0;
+  }
+  .mix-box-container-hidden {
+    width: 50px;
+    transition: width 0.5s;
+  }
+  .mix-box-container-open {
+    width: 420px;
+    transition: width 0.5s;
+  }
+  .mix-box-btn-open {
+    width: 40px;
+    cursor: pointer;
+  }
+  .mix-box-open {
+    display: block;
+  }
+  .mix-box-hidden {
+    display: none;
+  }
+  .mix-box-btn-open img {
+    width: 100%;
+  }
+  .mix-box-btn-open .mix-box-btn-open-02 {
+    display: none;
+  }
+  .mix-box-container:hover .mix-box-btn-open-02 {
+    display: block;
+  }
+  .mix-box-container:hover .mix-box-btn-open-01 {
+    display: none;
+  }
+  #mixBoxBtnClose {
+    cursor: pointer;
+  }
+  .del-mix-item {
+    margin-right: 10px;
+  }
+  .mix-box-btn-close {
+    transform: rotate(180deg);
+    width: 25px;
+    align-items: center;
+    justify-content: center;
+  }
+  .mix-box-btn-close img {
+    width: 100%;
+    height: 40px;
+  }
+  .mix-box-btn-close img + img {
+    display: none;
+  }
+  .mix-box-btn-close:hover img {
+    display: none;
+  }
+  .mix-box-btn-close:hover img + img {
+    display: block;
+  }
+  .name-your-product {
+    display: flex;
+  }
+  .name-your-product span {
+    color: #ffdaa1;
+    font-weight: 500;
+    font-size: 20px;
+    display: block;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+  .mixProduct {
+    height: 28px;
+  }
+
+  .mix-box-content {
+    margin-left: 10px;
+  }
+  .mix-box-content p {
+    color: #bdbdbd;
+    font-size: 12px;
+    text-align: end;
+  }
+  .pdName {
+    background-color: #956d31;
+    border: none;
+    border-radius: 3px;
+    color: #ffdaa1;
+    display: block;
+    caret-color: #ffdda1; /* 指定色 */
+  }
+  .how-to-mix {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .how-to-mix span {
+    color: #ffdda1;
+  }
+  .pdMixBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+  }
+  .how-to-mix > input {
+    background-color: #956d31;
+    border: none;
+    border-radius: 3px;
+    color: #ffdaa1;
+    display: block;
+    width: 60px;
+    margin: 0 10px;
+  }
+
+  .del-mix-item img {
+    width: 40px;
+    vertical-align: top;
+  }
+  .del-mix-item {
+    cursor: pointer;
+  }
+  #mixInCart {
+    margin-top: 30px;
+    border: none;
+    background-color: #ffdaa1;
+    color: #956d31;
+    width: 160px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 25%;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  /* ======= shopping car start ======== */
   /* ========== homepage-04 end =========== */
   /* ======== homepage-footer start ======= */
   .homepage-footer {
