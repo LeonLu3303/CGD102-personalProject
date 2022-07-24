@@ -226,7 +226,7 @@
 .m-espreeso-content-right-02 p {
   margin: 0;
   padding: 0;
-  color: #ffc054;
+  color: #bdbdbd;
   font-size: 16px;
 }
 .m-espreeso-content-right-02 h4,
@@ -385,9 +385,13 @@
 .menu-type-switch-block {
   margin: 80px auto 0 auto;
   width: 90%;
-  border-radius: 40px;
-  border: 2px dashed #695639;
+  border: #695639 dashed 2px;
+  border-radius: 50px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
+
 .container {
   width: 90%;
   display: flex;
@@ -396,7 +400,7 @@
   align-items: center;
 }
 .container h3 {
-  margin: 10px 0 0 0;
+  margin: 30px 0 0 0;
   padding: 0;
   font-size: 36px;
   color: #ffdda1;
@@ -409,10 +413,13 @@
   color: #c19759;
   display: block;
 }
-.container p {
+.menu-04-container-p {
   color: #bdbdbd;
   width: 50%;
   text-align: center;
+  display: block;
+  line-height: 28px;
+  margin-bottom: 40px;
 }
 .divider-menu-page-04 {
   display: flex;
@@ -427,4 +434,56 @@
   width: 80px;
   height: 1px;
   background-color: #c19759;
+}
+.meun-items-pic {
+  width: 18%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.meun-items-pic img {
+  width: 100%;
+}
+.item-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.menu-items-content {
+  width: 100%;
+  flex-grow: 1;
+  margin: 20px;
+}
+.menu-items-content > div {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.menu-info-04-item {
+  font-size: 16px;
+  color: #bdbdbd;
+}
+.menu-info-04-item + div {
+  flex-grow: 1;
+  height: 100%;
+  border-bottom: 1px dashed #bdbdbd;
+}
+.menu-items-content div span {
+  padding: 0;
+  margin: 0 0 0 5px;
+  font-size: 12px;
+  color: #bdbdbd;
+}
+.p-small {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #bdbdbd;
+}
+.p-small span {
+  font-size: 8px;
+}
+.menu-items-price {
+  font-size: 20px;
+  color: #bdbdbd;
 }
