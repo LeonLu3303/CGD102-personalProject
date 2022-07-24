@@ -209,7 +209,7 @@ body {
   }
   .navBar-menu {
     margin-top: 20px;
-    right: 10%;
+    right: 5%;
     top: 2%;
   }
   /*========= homepage-01 ========*/
@@ -617,13 +617,16 @@ body {
     align-items: center;
     border-radius: 0 20px 20px 0;
   }
+
   .mix-box-container-hidden {
-    width: 50px;
-    transition: width 0.5s;
+    width: 60px;
+    height: 100px;
+    transition: width 0.5s, height 0.5s;
   }
   .mix-box-container-open {
     width: 420px;
-    transition: width 0.5s;
+    height: 400px;
+    transition: width 0.3s, height 0.3s;
   }
   .mix-box-btn-open {
     width: 40px;
