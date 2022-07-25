@@ -142,12 +142,11 @@
   width: 100%;
 }
 .barista-pic-content {
-  margin-top: 160px;
+  margin-top: 120px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
 }
 .barista-left {
   width: 55%;
@@ -155,9 +154,36 @@
 .barista-right {
   width: 35%;
 }
-.barista-right-pic {
+.barista-left-pic {
+  width: 100%;
+}
+.barista-left-pic img {
+  width: 100%;
 }
 .up {
   position: relative;
   z-index: 3;
+}
+.barista-right-pic {
+  width: 100%;
+}
+.barista-right-pic img {
+  width: 100%;
+}
+.small-font-01 {
+  margin: 20px 0;
+  color: #c9c9c9;
+  font-size: 24px;
+}
+.about-page-02 {
+  position: relative;
+}
+.avavav {
+  position: absolute;
+  background-color: #e4e4e45d;
+  z-index: 0;
+  left: 0;
+  top: 200px;
+  width: 70vw;
+  height: 58%;
 }
